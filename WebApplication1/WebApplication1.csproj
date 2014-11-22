@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\DBTest.mdf" />
+    <Content Include="App_Data\DBTest_log.ldf">
+      <DependentUpon>DBTest.mdf</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -71,6 +75,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
